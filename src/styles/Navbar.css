@@ -1,0 +1,129 @@
+
+nav {
+    background-color: #222831;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    text-transform: uppercase;
+  }
+  nav > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu {
+    width: 35%;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 8px;
+  }
+  .menu > ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+  }
+  
+  .menu > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+  }
+  nav > .wrapper > button {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 0px;
+    background-color: transparent;
+    padding: 0px;
+  }
+  nav > .wrapper > button > svg {
+    color: #fff;
+    font-size: 50px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .menu > ul {
+      display: none;
+    }
+    .menu.tampil > ul {
+      display: inline;
+    }
+    .menu {
+      text-align: right;
+    }
+    nav > .wrapper > button {
+      display: inline;
+    }
+    .menu > ul {
+      flex-direction: column;
+      background-color: #000;
+      width: 100%;
+      position: fixed;
+      top: 70px;
+      left: 0;
+    }
+    .menu > ul > li {
+      text-align: left;
+      cursor: pointer;
+    }
+    .menu > ul > li > a {
+      display: inline-block;
+      padding: 15px 20px 15px 50px;
+      width: 100%;
+    }
+    .menu > ul > li > a:hover {
+      background-color: #222831;
+    }
+  }
+
+
+
+/* Styling for mobile phones (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+    .menu > ul {
+      display: none;
+    }
+    .menu.tampil > ul {
+      display: inline;
+    }
+    .menu {
+      text-align: right;
+    }
+    nav > .wrapper > button {
+      display: inline;
+    }
+    .menu > ul {
+      flex-direction: column;
+      background-color: #000;
+      width: 100%;
+      position: fixed;
+      top: 50px; /* Adjusted for smaller screens */
+      left: 0;
+    }
+    .menu > ul > li {
+      text-align: left;
+      cursor: pointer;
+    }
+    .menu > ul > li > a {
+      display: inline-block;
+      padding: 15px 20px 15px 50px;
+      width: 100%;
+    }
+    .menu > ul > li > a:hover {
+      background-color: #222831;
+    }
+  }

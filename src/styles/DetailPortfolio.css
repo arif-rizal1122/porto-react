@@ -1,0 +1,14 @@
+#detail-portfolio > .wrapper {
+    width: 60%;
+    height: 100vh;
+  }
+  #detail-portfolio > .wrapper > img {
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+  }
+  #detail-portfolio > .wrapper > p.skill {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #222831;
+  }
